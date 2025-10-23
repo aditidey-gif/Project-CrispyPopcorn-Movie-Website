@@ -1,0 +1,413 @@
+/* Custom Fonts and Variables */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --crispy-red: #E50914;
+            --main-bg: #0A0A0A; /* Deeper black for cinema feel */
+            --text-light: #F7F7F7;
+            --accent-gold: #F0AD4E;
+            --anime-red: #D9534F;   /* Primary Accent (Red) */
+            --anime-gold: #F0AD4E;  /* Secondary Accent (Gold/Yellow) */
+            --navbar-bg: #33291f;   /* Dark Background (Near Black/Charcoal) */
+            --text-light: #f7f7f7;   /* Light Text */
+            --search-bg: #334050;   /* Darker search field */
+
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- VIDEO PLAYER SECTION --- */
+        .header {
+            width: 100%;
+            background-color: #000;
+            padding: 1rem 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+        }
+        @media (min-width: 768px) {
+             .header {
+                padding: 1rem 2rem;
+            }
+        }
+        
+        .video-player-container {
+            width: 100%;
+            /* 16:9 Aspect Ratio (56.25% of width) */
+            padding-top: 56.25%; 
+            position: relative;
+            background-color: #000;
+        }
+        
+        .video-player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* --- GENERAL CONTAINER AND BUTTONS --- */
+        .movie-info-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Pill shape */
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        /* --- CRISPY POPCORN LOGO --- */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none; /* Remove underline from anchor */
+            color: inherit;
+        }
+
+        .logo-text-block {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .logo-crispy {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--anime-gold);
+            text-shadow: 1px 1px 0 #8B4513;
+        }
+
+        .logo-popcorn {
+            font-size: 19.5px;
+            font-weight: 900;
+            color: var(--anime-red);
+            text-shadow: 1px 1px 0 var(--anime-gold);
+            text-transform: uppercase;
+        }
+
+        .logo-icon {
+            font-size: 38px; /* Smaller icon size for navbar */
+            line-height: 1;
+        }
+        
+        /* Movie Details Main Section */
+        .movie-details-main {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        /* Title and Actions */
+        .title-actions-group {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @media (min-width: 768px) {
+            .title-actions-group {
+                flex-direction: row;
+                align-items: flex-end;
+            }
+        }
+
+        .movie-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        @media (min-width: 768px) {
+            .movie-title {
+                font-size: 3rem;
+            }
+        }
+
+        .movie-metadata {
+            font-size: 1.25rem;
+            color: #9CA3AF;
+            font-weight: 500;
+        }
+
+        .actions-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        @media (min-width: 768px) {
+            .actions-buttons {
+                margin-top: 0;
+            }
+        }
+
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s, opacity 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .play-button {
+            background-color: white;
+            color: var(--main-bg);
+            font-size: larger;
+        }
+        .play-button:hover {
+            background-color: skyblue;
+        }
+
+        .list-button {
+            background-color: rgba(100, 100, 100, 0.5);
+            color: white;
+            font-size: larger;
+        }
+        .list-button:hover {
+            background-color: orange;
+        }
+        
+        /* Divider */
+        .divider {
+            border-top: 1px solid #1F2937;
+            margin-bottom: 2rem;
+        }
+
+        /* Summary and Cast Grid */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 1024px) {
+            .details-grid {
+                grid-template-columns: 2fr 1fr;
+                gap: 2rem;
+            }
+        }
+        
+
+        .summary-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--accent-gold);
+        }
+        
+        .summary-text {
+            font-size: 1.125rem;
+            color: #D1D5DB;
+            margin-bottom: 1.5rem;
+        }
+
+        .director-info {
+            margin-top: 2rem;
+        }
+
+        .director-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        .director-name {
+            font-size: 1.125rem;
+            color: #D1D5DB;
+        }
+
+        .cast-column {
+            padding-left: 0;
+            border-left: none;
+        }
+        @media (min-width: 1024px) {
+            .cast-column {
+                padding-left: 2rem;
+                border-left: 1px solid #1F2937;
+            }
+        }
+
+        .cast-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .cast-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .cast-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #D1D5DB;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .cast-actor {
+            font-weight: 500;
+            color: white;
+        }
+        .cast-role {
+            font-size: 0.875rem;
+        }
+
+
+        /* --- MORE LIKE THIS SECTION --- */
+        .more-like-section {
+            margin-top: 4rem;
+        }
+
+        .more-like-heading {
+            font-size: 1.875rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--crispy-red);
+        }
+        
+        .movie-grid {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .movie-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 768px) {
+            .movie-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .movie-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+        @media (min-width: 1280px) {
+            .movie-grid { grid-template-columns: repeat(6, 1fr); }
+        }
+
+        .content-section1 {
+    padding: 50px 40px;
+    color: var(--text-light);
+    
+    /* 1. Set the height for the parallax effect to be visible */
+    height: auto; /* Keep auto height for content, but we'll add padding */
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    /* 2. Set the SECOND PARALLAX BACKGROUND IMAGE */
+    background-color: rgb(32, 32, 31);
+    background-attachment: fixed; /* THE PARALLAX MAGIC */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Add a dark overlay to make the content and cards stand out */
+    position: relative;
+    z-index: 0; /*Ensure this section is below the main navbar (z-index: 1000)*/
+}
+
+
+
+/* Ensure content and movie cards are above the new overlay */
+.content-section1 > * {
+    position: relative; 
+    z-index: 2; /* Content must be higher than the overlay (z-index: 1) */
+}
+
+/* Movie Card Styles (must be updated to stand out against the dark background) */
+.fs1-movie-card {
+    background-color: rgba(31, 40, 51, 0.9); /* Use a slightly transparent navbar-bg for depth */
+    padding: 15px;
+    margin: 0;
+    display: block;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow to pop */
+    transition: transform 0.3s;
+}
+
+.fs1-movie-card img {
+    /* 1. Reset margin: Eliminates any default top margin */
+    margin-top: 0; 
+    
+    /* 2. Ensure the image fits within the padding of the parent */
+    width: 100%;
+    
+    /* 3. Re-apply the bottom margin to separate image from text */
+    margin-bottom: 10px; 
+    
+    /* ... rest of your img styles (height, object-fit, etc.) ... */
+}
+
+.fs1-movie-card:hover {
+    transform: translateY(-20px); /* Lift card on hover for a nice effect */
+}
+
+.fs1-movieTitle{
+    color: white;
+}
+
+.fs1-genre{
+    color: var(--anime-gold);
+}
+
+
+/* --- MORE BUTTON --- */
+
+.more{
+    padding-top: 30px;
+    padding-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* Hide specific cards on smaller screens */
+        .hidden-lg {
+            display: none !important;
+        }
+        @media (min-width: 1024px) {
+             .hidden-lg {
+                display: block !important;
+            }
+        }
+        .hidden-xl {
+            display: none !important;
+        }
+        @media (min-width: 1280px) {
+             .hidden-xl {
+                display: block !important;
+            }
+        }

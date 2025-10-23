@@ -1,0 +1,381 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --anime-red: #D9534F;   /* Primary Accent (Red) */
+            --anime-gold: #F0AD4E;  /* Secondary Accent (Gold/Yellow) */
+            --navbar-bg: #33291f;   /* Dark Background (Near Black/Charcoal) */
+            --text-light: #f7f7f7;   /* Light Text */
+            --search-bg: #334050;   /* Darker search field */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(32, 32, 31); /* Dark body background */
+        }
+
+        /* NAVIGATION BAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            background-color: var(--navbar-bg);
+            padding: 10px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: sticky; /* <--- THIS IS THE KEY */
+            top: 0;          /* <--- THIS IS THE OTHER KEY */
+            z-index: 10;
+        }
+
+        /* --- CRISPY POPCORN LOGO --- */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none; /* Remove underline from anchor */
+            color: inherit;
+        }
+
+        .logo-text-block {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .logo-crispy {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--anime-gold);
+            text-shadow: 1px 1px 0 #8B4513;
+        }
+
+        .logo-popcorn {
+            font-size: 19.5px;
+            font-weight: 900;
+            color: var(--anime-red);
+            text-shadow: 1px 1px 0 var(--anime-gold);
+            text-transform: uppercase;
+        }
+
+        .logo-icon {
+            font-size: 38px; /* Smaller icon size for navbar */
+            line-height: 1;
+        }
+        
+        
+
+        /* --- NAVIGATION LINKS --- */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+            border-bottom: 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-link a:hover {
+            color: var(--anime-red);
+            border-bottom: 2px solid var(--anime-red);
+        }
+
+        
+
+        /* SIGN IN BUTTON */
+        .sign-in-btn {
+            background-color: white; /* white background */
+            color: red; /* Dark text */
+            font-weight: bolder;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.1s;
+            /* Added a subtle shadow to make it pop */
+            box-shadow: 5px 5px 5px rgba(21, 21, 21, 0.3);
+        }
+        .sign-in-btn:hover {
+            background-color: #e69d35; /* Slightly darker gold on hover */
+            color: black;
+            transform: translateY(-1px);
+        }
+
+        
+        /* MAIN CONTENT */
+        .main-content {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem 1rem; 
+            background-color: rgb(32, 32, 31);;
+        }
+        @media (min-width: 640px) {
+            .main-content { padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
+        @media (min-width: 1024px) {
+            .main-content { padding-left: 2rem; padding-right: 2rem; }
+        }
+
+        /* EXPLORE MOVIES TITLE */
+        .page-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--anime-gold);
+            text-shadow: 4px 4px 0 black;
+            margin-bottom: 2rem;
+        }
+        
+        /* SEARCH & FILTER BAR */
+        .filter-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: stretch; /* Stretch items vertically on mobile */
+        }
+        @media (min-width: 768px) {
+            .filter-bar { 
+                flex-direction: row; 
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        /* SEARCH */
+        .search-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+        @media (min-width: 768px) {
+            .search-container { width: 450px; } /* Fixed width for search bar on desktop */
+        }
+
+        .search-input::placeholder { /* Standard pseudo-element */
+            color: white; 
+            opacity: 1; 
+        }
+
+        /* SEARCH BUTTON */
+        .search-button{
+            background-color: orange;
+            color: white;
+            border: 2px solid white;
+            border-radius: 0 0.5rem 0.5rem 0; /* Round right corners only */
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+            flex-shrink: 0; /* Prevents button from being squashed */
+            
+            /* Center the SVG inside the button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .search-button:hover {
+            background-color: purple; /* Darker red on hover */
+            border-color: #CC0000;
+            box-shadow: 0 0 0 2px var(--anime-gold);
+        }
+
+
+        /* SEARCH INPUT */
+        .search-input:focus, .filter-select:focus {
+            border-color: red;
+            outline: none;
+            box-shadow: 0 0 0 2px red;
+        }
+        .search-input {
+            flex-grow: 1; /* Input takes up available space */
+            background-color: #c72626;
+            border: 2px solid white;
+            color: white;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            padding: 0.75rem 1rem; 
+            
+            /* ADJUSTED FOR BUTTON INTEGRATION */
+            border-radius: 0.5rem 0 0 0.5rem; /* Round left corners only */
+            border-right: none; /* Blend with the button */
+            
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* GENRE, YEAR, LANGUAGE FILTER */
+        .filter-select-container {
+            position: relative;
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .filter-select-container { width: 180px; } /* Fixed width for dropdowns */
+        }
+
+        .filter-select{
+            background-color: orange;
+            color: black;
+            font-weight: bolder;
+            border: 2px solid white;
+            border-radius: 0.5rem; /* Round corners */
+            padding: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+            flex-shrink: 0; /* Prevents button from being squashed */
+            padding-left: 1rem;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z' clip-rule='evenodd' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1.5em 1.5em;
+        }
+
+        .filter-select:hover{
+            background-color: purple; /* Darker red on hover */
+            border-color: #CC0000;
+            color: white;
+            box-shadow: 0 0 0 2px var(--anime-gold);
+        }
+        
+        .search-input:focus, .filter-select:focus {
+            border-color: var(--anime-gold);
+            outline: none;
+            box-shadow: 0 0 0 2px var(--anime-gold);
+        }
+
+         h1{
+            font-weight: 900;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 60px;
+            justify-content: center;
+            display: grid;
+        }
+
+
+        .movie-grid {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .movie-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 768px) {
+            .movie-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .movie-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+        @media (min-width: 1280px) {
+            .movie-grid { grid-template-columns: repeat(6, 1fr); }
+        }
+
+        .content-section1 {
+    padding: 50px 40px;
+    color: var(--text-light);
+    
+    /* 1. Set the height for the parallax effect to be visible */
+    height: auto; /* Keep auto height for content, but we'll add padding */
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    /* 2. Set the SECOND PARALLAX BACKGROUND IMAGE */
+    background-color: rgb(32, 32, 31);
+    background-attachment: fixed; /* THE PARALLAX MAGIC */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Add a dark overlay to make the content and cards stand out */
+    position: relative;
+    z-index: 0; /*Ensure this section is below the main navbar (z-index: 1000)*/
+}
+
+
+
+/* Ensure content and movie cards are above the new overlay */
+.content-section1 > * {
+    position: relative; 
+    z-index: 2; /* Content must be higher than the overlay (z-index: 1) */
+}
+
+/* Movie Card Styles (must be updated to stand out against the dark background) */
+.fs1-movie-card {
+    background-color: rgba(31, 40, 51, 0.9); /* Use a slightly transparent navbar-bg for depth */
+    padding: 15px;
+    margin: 0;
+    display: block;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow to pop */
+    transition: transform 0.3s;
+}
+
+.fs1-movie-card img {
+    /* 1. Reset margin: Eliminates any default top margin */
+    margin-top: 0; 
+    
+    /* 2. Ensure the image fits within the padding of the parent */
+    width: 100%;
+    
+    /* 3. Re-apply the bottom margin to separate image from text */
+    margin-bottom: 10px; 
+    
+    /* ... rest of your img styles (height, object-fit, etc.) ... */
+}
+
+.fs1-movie-card:hover {
+    transform: translateY(-20px); /* Lift card on hover for a nice effect */
+}
+
+.fs1-movieTitle{
+    color: white;
+}
+
+.fs1-genre{
+    color: var(--anime-gold);
+}
+
+
+/* --- PLUS BUTTON --- */
+
+.more{
+    padding-top: 30px;
+    padding-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs2-more-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.fa-plus-circle{
+    font-size: 90px;
+}
+
+.fa-plus-circle:hover{
+    color: rgb(120, 37, 37);
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crispy Popcorn - World of Cinemas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+
+        <!-- CRISPY POPCORN LOGO -->
+        <a href="index.html" class="logo-container">
+            <div class="logo-text-block">
+                <div class="logo-crispy">CRISPY</div>
+                <div class="logo-popcorn">P🍿PC🍿RN</div>
+            </div>
+        </a>
+
+        <!-- NAVIGATION LINKS -->
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="movies.html">Movies</a></li>
+            <li class="nav-link"><a href="series.html">Series</a></li>
+            <li class="nav-link"><a href="trending.html">Trending</a></li>
+            <li class="nav-link"><a href="watchlist.html">Watchlist</a></li>
+
+            <!-- GENRES -->
+             <li class="nav-link">
+                <select class="genre-select" onchange="window.location.href=this.value;">
+                    <option value="#" disabled selected>Genres⇂</option>
+                    <option value="#">Action</option>
+                    <option value="#">Adventure</option>
+                    <option value="#">Anime</option>
+                    <option value="#">Comedy</option>
+                    <option value="#">Crime</option>
+                    <option value="#">Family</option>
+                    <option value="#">Fantasy</option>
+                    <option value="#">friendship</option>
+                    <option value="#">Historical</option>
+                    <option value="#">Horror</option>
+                    <option value="#">K - Drama</option>
+                    <option value="#">Martial Arts</option>
+                    <option value="#">Motivational</option>
+                    <option value="#">Musical</option>
+                    <option value="#">Mystery</option>
+                    <option value="#">Psychological</option>
+                    <option value="#">Revenge</option>
+                    <option value="#">Romance</option>
+                    <option value="#">Sci - Fi</option>
+                    <option value="#">Spy</option>
+                    <option value="#">SuperHero</option>
+                    <option value="#">Supernatural</option>
+                    <option value="#">Survival</option>
+                    <option value="#">Suspense</option>
+                    <option value="#">Thriller</option>
+                    <option value="#">Tragic</option>
+                    <option value="#">TV Program</option>
+                    <option value="#">War</option>
+                    <option value="#">Zombie</option>
+
+                </select>
+            </li>
+
+            <!-- LANGUAGES -->
+              <li class="nav-link">
+                <select class="language-select" onchange="window.location.href=this.value;">
+                    <option value="#" disabled selected>Languages⇂</option>
+                    <option value="#">Bengali</option>
+                    <option value="#">Chinese</option>
+                    <option value="#">English</option>
+                    <option value="#">Hindi</option>
+                    <option value="#">Japanese</option>
+                    <option value="#">Korean</option>
+                </select>
+            </li>
+        </ul>
+
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+            <input type="text" placeholder="Search Movies or Series...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- SIGN IN BUTTON -->
+        </div>
+            <a href="signin.html" class="sign-in-btn">Sign In</a>
+        </div>
+    </nav>
+
+
+    <!-- HOMEPAGE-BACKGROUND SECTION -->
+    <section class="parallax-section" id="parallax-bg">
+        <div class="parallax-content">
+
+            <!-- BACKGROUND WRITING -->
+            <h2>Experience Cinema Like Never Before</h2>
+            <p>Dive into the world's most epic and critically acclaimed movies and series, with sharp subtitles and crispy quality.</p>
+           
+            <!-- WATCH NOW BUTTON -->
+            <a href="#" class="watch-now-btn">▶️ Watch Now</a>
+        </div>
+    </section>
+
+    
+    <!-- CONTENT SECTION -->
+
+     <!-- FIRST SECTION -->
+    <section class="content-section1">
+
+        <!-- TOP RECOMMENDATIONS THIS WEEK -->
+        <h1 class="fs1-Title">🔥 Top Recommendations This Week 🔥</h1>
+
+        <div class="fs1-top-recommendations">
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://www.tallengestore.com/cdn/shop/products/18_dede6bd2-6a23-41f9-a881-bf86e6fc1d5e_large.jpg?v=1568967564" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Intersteller</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre" style="color: var(--anime-gold);">Adventure / Sci-Fi<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVGxM8-Hk-fe7zsQoHyXt5rzY4i3a4ISyjQ&s" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">What's Your Number?</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre" style="color: var(--anime-gold);">Romance / Comedy<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8K3BVvV4W-XgVbJB90CyCxtVEyxoTxqRBVg&s" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">From</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre" style="color: var(--anime-gold);">Horror / Mystery<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://image.tmdb.org/t/p/original/vZnM2u9nPGt4qoXxGN1LPTKIlA1.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">The Glory</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre" style="color: var(--anime-gold);">Thriller<br>K-Drama</p>
+            </div>
+
+              <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://images-cdn.ubuy.co.in/661945939b74067d82047ac8-trends-international-spy-x-family-anya.jpg" alt="Anime Poster 1" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Spy × Family</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre" style="color: var(--anime-gold);">Action / Spy<br>Anime Series</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECOND SECTION -->
+     <section class="content-section2">
+
+        <!-- ONLY ON CRISPY P🍿PC🍿RN -->
+        <h1>Only On CRISPY P🍿PC🍿RN  </h1>
+
+        <div class="fs2-onlyOnCrispyPopcorn">
+            <div class="fs2-movie-card">
+                <!-- IMAGE -->
+                <img src="https://i.pinimg.com/736x/a3/bb/b1/a3bbb19fdffd2343159cacdb98c198e3.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Alice In Borderland</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Japan / Survival / Sci-Fi<br>Series</p>
+            </div>
+
+            <div class="fs2-movie-card">
+                <!-- IMAGE -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Special_OPS_Poster.jpeg/250px-Special_OPS_Poster.jpeg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Special Ops</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Spy / Thriller<br>Series</p>
+            </div>
+
+            <div class="fs2-movie-card">
+                <a href="Movielanding.html">
+                    <!-- IMAGE -->
+                    <img src="https://m.media-amazon.com/images/I/51hu6I1BGdL._AC_SY350_QL15_.jpg" alt="Anime Poster 3" style="height: 80%;">
+                    <!-- MOVIE NAME -->
+                    <h3>Harry Potter and The Philosopher's Stone</h3>
+                    <!-- GENRE -->
+                    <p style="color: var(--anime-gold);">Family / Fantasy<br>Movie</p>
+                </a>
+            </div>
+
+           <div class="fs2-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw0rGDVxk9ApFtCIFRvJD5IvCjTuwf95CNkg&s" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Sonar Kella</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Bengali / Thriller / Adventure<br>Movie</p>
+            </div>
+
+            <div class="fs2-movie-card">
+                <!-- IMAGE -->
+                <img src="https://preview.redd.it/netflix-genie-make-a-wish-teaser-poster-premieres-october-3-v0-takd1oq5h2kf1.jpeg?auto=webp&s=40b6ab88d5718fbf13ea4f52273a0634ed286082" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Genie, Make a Wish</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Romance / Comedy / Fantasy<br>K-Drama</p>
+            </div>
+
+            <div class="fs2-movie-card">
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BZTlhMTQ2MGItMDVjYS00M2QyLWFhMmYtYzZkMDMwMWJlNmI2XkEyXkFqcGc@._V1_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Byomkesh Gotro</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Bengali / Thriller / Mystery<br>Movie</p>
+            </div>            
+        </div>
+
+        <div class="more" style="padding-left: 48%;">
+            <div class="fs2-movie-card more-card">
+                <a href="all-movies.html" class="fs2-more-link">
+                    <span class="fs2-more-text">MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- THIRD SECTION -->
+     <section class="content-section3">
+
+        <!-- Top 10 WorldWide Today -->
+        <h1>Top 10 WorldWide Today</h1>
+
+        <div class="fs3-top10WorldwideToday">
+            <div class="fs3-movie-card">
+                <div class="rank-badge top3">1</div>
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BNzQ4NGY5MGYtYTcxNy00OTdkLWE3YTgtMjg2YmExMjhjZjc5XkEyXkFqcGc@._V1_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>G A P</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Thai / Rom-Com / Yuri<br>Series</p>
+            </div>
+
+            <div class="fs3-movie-card">
+                <div class="rank-badge top3">2</div>
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BNTg5NzI3NzQzNl5BMl5BanBnXkFtZTcwMjM3MDU2OA@@._V1_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Taalash</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Suspense / Psychological<br>Movie</p>
+            </div>
+
+            <div class="fs3-movie-card">
+                <div class="rank-badge top3">3</div>
+                <!-- IMAGE -->
+                <img src="https://i.pinimg.com/736x/1c/2e/bb/1c2ebbd54a18b912f7b6b5779047c291.jpg" alt="Anime Poster 3" style="height: 80%;">
+                <!-- MOVIE NAME -->
+                <h3>Rocky Aur Rani Ki Prem Kahani</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Family / Rom-Com / Drama<br>Movie</p>
+            </div>
+
+           <div class="fs3-movie-card">
+                <div class="rank-badge">4</div>
+                <!-- IMAGE -->
+                <img src="https://i.pinimg.com/736x/ee/67/29/ee6729dd720deb548f0755734468d2e8.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Caliphate</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">War / Action / Suspense<br>Series</p>
+            </div>
+
+            <div class="fs3-movie-card">
+                <div class="rank-badge">5</div>
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BYTlhMGUwYjQtMDUzMi00YzYwLTgwYTItOTI2YTZhZjkzYmRhXkEyXkFqcGc@._V1_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>YES or NO</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Thai / Romance / Comedy<br>Movie</p>
+            </div>
+
+            <div class="fs3-movie-card">
+                <div class="rank-badge">6</div>
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR92n-xdTAowM35M4NF3hD7QbzdVHOnVXSYSg&s" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Tell Me What You Saw</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Korean / Thriller<br>K-Drama</p>
+            </div>
+        </div>
+
+        <div class="more" style="padding-left: 48%;">
+            <div class="fs2-movie-card more-card">
+                <a href="all-movies.html" class="fs2-more-link">
+                    <span class="fs2-more-text">MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOURTH SECTION -->
+     <section class="content-section4">
+
+        <!-- Bingeworthy International Series / Movies -->
+        <h1>Bingeworthy International Series / Movies</h1>
+        <div class="fs4-bingeworthyInternational">
+            <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/I/41Fv9HYZgAL._UF894,1000_QL80_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>DARK</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Sci-Fi / Mystery<br>Series</p>
+            </div>
+
+            <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://images.ctfassets.net/4cd45et68cgf/6eRODfgqRc2KehIpHcksiR/e4e4ac91d1d919419fd330e2856f8643/en_us_wlgyt-s1_main_da_ka_-_spring_vertical_27x40_rgb_pre_1.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>When Life Gives You Tangerines</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Family / Romance<br>Series</p>
+            </div>
+
+            <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://images-cdn.ubuy.co.in/68050437df7290b03e0286f9-friends-tv-show-poster-print.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Friends</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Comedy<br>Series</p>
+            </div>
+
+           <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://i.pinimg.com/564x/7e/94/8b/7e948b3cc258b7d34a30fa3f33bf91c8.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>The Sky Is Pink</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Hindi / Drama / Romance<br>Movie</p>
+            </div>
+
+            <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BYmM4NDRmZWUtZTFmYS00MzIzLTk0NDctYWEyZjAwMjY1M2VhXkEyXkFqcGc@._V1_.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Breathe: Into the Shadows</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Hindi / Thriller<br>Series</p>
+            </div>
+
+            <div class="fs4-movie-card">
+                <!-- IMAGE -->
+                <img src="https://i.pinimg.com/736x/f6/43/26/f643267782c00b305a56d2d94ef32749.jpg" alt="Anime Poster 3" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3>Split</h3>
+                <!-- GENRE -->
+                <p style="color: var(--anime-gold);">Horror / Crime<br>Movie</p>
+            </div>
+            
+        </div>
+
+        <div class="more" style="padding-left: 48%;">
+            <div class="fs2-movie-card more-card">
+                <a href="all-movies.html" class="fs2-more-link">
+                    <span class="fs2-more-text">MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="project.js"></script>
+</body>
+</html>

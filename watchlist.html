@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Popcorn | Watchlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="watchlist.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+
+        <!-- CRISPY POPCORN LOGO -->
+        <a href="index.html" class="logo-container">
+            <div class="logo-text-block">
+                <div class="logo-crispy">CRISPY</div>
+                <div class="logo-popcorn">P🍿PC🍿RN</div>
+            </div>
+        </a>
+
+        <!-- NAVIGATION LINKS -->
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="movies.html">Movies</a></li>
+            <li class="nav-link"><a href="series.html">Series</a></li>
+            <li class="nav-link"><a href="trending.html">Trending</a></li>
+
+        <!-- SIGN IN BUTTON -->
+        </div>
+            <a href="signin.html" class="sign-in-btn">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- EXPLORE MOVIES TITLE -->
+        <h1 class="page-title">Your Watchlist, Enjoy!</h1>
+
+        <!-- SEARCH & FILTER BAR -->
+        <div class="filter-bar">
+            
+            <!-- SEARCH -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Search titles, actors, or genres..."
+                    class="search-input"
+                > 
+                <!-- SEARCH ICON -->
+                <button type="button" class="search-button">
+                    <!-- Search Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.3-4.3"/>
+                    </svg>
+                </button>
+            </div>
+            
+
+            <!-- GENRE FILTER -->
+            <div class="filter-select-container">
+                <select class="filter-select">
+                    <option value="All">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Drama">Drama</option>
+                </select>
+            </div>
+
+            <!-- YEAR FILTER -->
+            <div class="filter-select-container">
+                <select class="filter-select">
+                    <option value="All">All Years</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+
+            <!-- LANGUAGE FILTER -->
+            <div class="filter-select-container">
+                <select class="filter-select">
+                    <option value="All">All Language</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Chinese">chinese</option>
+                    <option value="Urdu">Urdu</option>
+                </select>
+            </div>
+        </div>
+
+        <h1>----- Watchlist -----</h1>
+
+        <div class="movie-grid">
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BYWQ1MDdiOTEtMGMzMC00ZjExLTkxN2QtOTczNTU5MDFkNWI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Modern Love Mumbai</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Romance<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvUka4hPQqRV4ZOFtSHZo8wsTxJxzmJFnVx9OhTQ6d0hwTK0RS2adbPZK5OmUqlTtwkp6U" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Eagoler Chokh</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Thriller / Crime<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6s174ZNvixdwrsYb9Gf6eYiOk9_8udaUb54x7FdJxQ076JsIZjNdHXL_U5rpH80J2JsMG" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Kaala Paani</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Thriller<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh2vGe0DYZQuALyPxD6LQUfD-UwzJgyAdhtr-sR0kJIkbKBFbaFgnel_AbBBhAYZnoUxEx" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Masaan</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Romance / Drama<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/A_Business_Proposal.jpg/250px-A_Business_Proposal.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Business Proposal</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Romance<br>K - Drama</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://m.media-amazon.com/images/M/MV5BNmZmYzQzMTktOWJjMi00Mzk1LWIyZjgtZmNiMWRiZmNjYjU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Made in Heaven</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Drama<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0ztIY6_LAZTO7MiAI-Nc8vD7b3cSlRl5j5HkSmEaPH66rVkQWaTEhV_MmANYj3_dMAZGA" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">The Walking Dead</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Horror<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTybURt8_OFQ80BdEueZ50m3H8cJMJR-WT8GP9BeV0q4RRxTCsYw5OT6Z1_x3QapsBEHwRiyw" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Black Summer</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Horror<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5JAR7ClwadiepmEcw_xgxxSqbtlOZJEnCFAadKRJtaxWrz5rXv1vSfX3NFPq5QIy08u9HKw" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Moana</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Famiy / Adventure<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Start-Up_2020.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Start-Up</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Rom - Com<br>K - Drama</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSErbQipmIdj4UIGn6khG821DCjG-lTZ7moP6HtXpd-O_9fGOtYtH2d5QKPx945-UO8yp_vw" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Migration</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Comedy / Adventure<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Finding Nemo</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Family / Adventure<br>Series</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT8Jo9NaRJZCjwve-zYih5Ut9pn010OUkaFh0Aw3RktQgfUIU6zqbutcs0EhAtsClj_Ad8Ag" alt="Poster" style="height: 72%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Pirates of the Caribbean: The Curse of the Black Pearl</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Adventure / Action<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Coco</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Family / Fantasy<br>Movie</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjYdoqDrEJuYarAh9_oXWdfz9AeL7xqvwKoAI_WjY4ZppRGEqXGSW3xlU9AXXXaTzCzr4ULHJjUP2O5-Xqd2dKz56Dzp3ZJ6VOJM-NCnk" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Mouse</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">Thriller<br>K - Drama</p>
+            </div>
+
+            <div class="fs1-movie-card">
+                <!-- IMAGE -->
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwxvc1SJnWX0NnwZls1Tff_EfeR3pVfTIyazLbNihF_Mxnf6FFuc59GppY6V0FaR83Rz-knQ" alt="Poster" style="height: 82%;">
+                <!-- MOVIE NAME -->
+                <h3 class="fs1-movieTitle">Big Mouth</h3>
+                <!-- GENRE -->
+                <p class="fs1-genre">HardBoiled / Noir / Crime<br>K - Drama</p>
+            </div>
+
+            <div class="more">
+                <a href="#" class="fs2-more-link">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        
+
+        <div class="more">
+           <h4 style="font-weight: 900; font-size: large; color: bisque;">----------------------- End Of This Page ----------------------</h4> 
+        </div>
+</body>
+</html>
